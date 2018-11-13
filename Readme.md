@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Мария Красилова](https://up.htmlacademy.ru/htmlcss/23/user/513369).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Казанцев](https://htmlacademy.ru/profile/ivan1kazantsev).
 
 ---
 
