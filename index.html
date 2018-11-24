@@ -35,7 +35,23 @@
       <header class="appointment">
         <h2>Заинтересовались?</h2>
         <p class="appointment-info">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <!-- Здесь будет форма -->
+        <form class="search" method="get" action="https://echo.htmlacademy.ru">
+          <div class="arrivial-date">
+            <label for="datein">Дата заезда</label>
+            <input type="date" id="datein" name="datein">
+          </div>
+          <div class="departure-date">
+            <label for="dateout">Дата выезда</label>
+            <input type="date" id="dateout" name="dateout">
+          </div>
+          <div class="quantity">
+            <p class="adult">Взрослые:</p>
+            <span class="adult"></span>
+            <p class="child">Дети:</p>
+            <span class="child"></span>
+            <button type="submit" class="search-button">Найти</button>
+          </div>
+        </form>
       </header>
       <a href="hotels.html">Поиск гостиницы в Седоне</a>
       <div class="modal">
