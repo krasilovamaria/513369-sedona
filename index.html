@@ -35,27 +35,43 @@
       <header class="appointment">
         <h2>Заинтересовались?</h2>
         <p class="appointment-info">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+
         <form class="search" method="get" action="https://echo.htmlacademy.ru">
-          <div class="arrivial-date">
-            <label for="datein">Дата заезда</label>
-            <input type="date" id="datein" name="datein">
-          </div>
-          <div class="departure-date">
-            <label for="dateout">Дата выезда</label>
-            <input type="date" id="dateout" name="dateout">
-          </div>
-          <div class="quantity">
-            <p class="adult">Взрослые:</p>
-            <span class="adult"></span>
-            <p class="child">Дети:</p>
-            <span class="child"></span>
-            <button type="submit" class="search-button">Найти</button>
-          </div>
+
+          <fieldset>
+            <legend class="visually-hidden">Сроки прибывания</legend>
+            <div class="arrivial-date">
+              <label for="datein">Дата заезда</label>
+              <input type="text" id="datein" name="datein">
+            </div>
+            <div class="departure-date">
+              <label for="dateout">Дата выезда</label>
+              <input type="text" id="dateout" name="dateout">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Количество детей и взрослых</legend>
+            <p>
+              <label for="adult">Взрослые:</label>
+              <button type="submit" class="adult-quantity-minus" tabindex="0">-</button>
+              <input type="text" id="adult" name="adult">
+              <button type="submit" class="adult-quantity-plus" tabindex="0">+</button>
+            </p>
+            <p>
+              <label for="child">Дети:</label>
+              <button type="submit" class="child-quantity-minus" tabindex="0">-</button>
+              <input type="text" id="child" name="child">
+              <button type="submit" class="child-quantity-plus" tabindex="0">+</button>
+            </p>
+          </fieldset>
+          <button type="submit" class="search-button" tabindex="0">Найти</button>
         </form>
+
       </header>
       <a href="hotels.html">Поиск гостиницы в Седоне</a>
       <div class="modal">
-        <!-- form-->
+        <form class="map" method="get" action="https://#.ru">
+        </form>
       </div>
     </section>
 
@@ -64,9 +80,9 @@
   <footer class="main-footer">
     <a href="#">#VISITSEDONA</a>
     <ul class="footer-social">
-      <li><a class="social-button" href="#">Твиттер</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Ютюб</a></li>
+      <li><a class="social-button" href="#" aria-label="Твиттер"></a></li>
+      <li><a class="social-button" href="#" aria-label="Фейсбук"></a></li>
+      <li><a class="social-button" href="#" aria-label="Ютюб"></a></li>
     </ul>
     <address class="footer-copyright">
       <b>Website by</b>
