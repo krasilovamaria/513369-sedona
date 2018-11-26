@@ -35,7 +35,7 @@
       <header class="appointment">
         <h2>Заинтересовались?</h2>
         <p class="appointment-info">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-
+        <a href="hotels.html">Поиск гостиницы в Седоне</a>
         <form class="search" method="get" action="https://echo.htmlacademy.ru">
 
           <fieldset>
@@ -49,30 +49,27 @@
               <input type="text" id="dateout" name="dateout">
             </div>
           </fieldset>
+
           <fieldset>
             <legend class="visually-hidden">Количество детей и взрослых</legend>
             <p>
               <label for="adult">Взрослые:</label>
-              <button type="submit" class="adult-quantity-minus" tabindex="0">-</button>
+              <button type="submit" class="adult-quantity-minus">-</button>
               <input type="text" id="adult" name="adult">
-              <button type="submit" class="adult-quantity-plus" tabindex="0">+</button>
+              <button type="submit" class="adult-quantity-plus">+</button>
             </p>
             <p>
               <label for="child">Дети:</label>
-              <button type="submit" class="child-quantity-minus" tabindex="0">-</button>
+              <button type="submit" class="child-quantity-minus">-</button>
               <input type="text" id="child" name="child">
-              <button type="submit" class="child-quantity-plus" tabindex="0">+</button>
+              <button type="submit" class="child-quantity-plus">+</button>
             </p>
           </fieldset>
-          <button type="submit" class="search-button" tabindex="0">Найти</button>
+
+          <button type="submit" class="search-button">Найти</button>
         </form>
 
       </header>
-      <a href="hotels.html">Поиск гостиницы в Седоне</a>
-      <div class="modal">
-        <form class="map" method="get" action="https://#.ru">
-        </form>
-      </div>
     </section>
 
   </main>
@@ -86,7 +83,7 @@
     </ul>
     <address class="footer-copyright">
       <b>Website by</b>
-      <a class="button" href="https://htmlacademy.ru">html academy</a>
+      <a class="button" href="https://htmlacademy.ru" aria-label="html academy"></a>
     </address>
   </footer>
 </body>
