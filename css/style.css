@@ -44,23 +44,27 @@ a {
   color: #766357;
 }
 
-.accost {
-  background-color: #ffffff;
-  text-align: center;
-}
-
-/* TODO, он немножко больше, должны были показывать где-нибудь это. */
 .visually-hidden {
-  display: none;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .about-sedona {
-  font-size: 21px;
+ background-color: #ffffff;
+ text-align: center;
 }
 
-.five-cause {
-  font-weight: 400;
-  color: #333333;
+.about-sedona strong{
+  font-size: 21px;
+  color: #000000;
+}
+
+.about-sedona p {
+ font-weight: 400;
+ color: #333333;
 }
 
 .modal-map {
@@ -81,22 +85,21 @@ a {
   color: #333333;
 }
 
-.search-form {
-  list-style: none;
-}
-
-.search-form a {
-  font-size: 21px;
+.appointment a {
   color: #ffffff;
+  font-size: 21px;
 
   background-color: #766357;
 }
 
-.search-form a:hover {
+.appointment a:hover,
+.appointment a:focus {
   background-color: #604e43;
 }
 
-.search-form a:active {
+.appointment a:not {
+  color: #928a85;
+
   background-color: #503e33;
 }
 
@@ -133,11 +136,11 @@ a {
   color: #81b3d2;
 }
 
-.search-button a {
+.search-button {
   list-style: none;
 }
 
-.search-button a {
+.search-button {
   font-size: 21px;
   color: #ffffff;
 
@@ -145,11 +148,12 @@ a {
   border: none;
 }
 
-.search-button a:hover {
+.search-button:hover,
+.search-button:focus {
   background-color: #669ec0;
 }
 
-.search-button a:active {
+.search-button:active {
   background-color: #5496bd;
 }
 
