@@ -29,18 +29,15 @@
       <div class="picture-sedona">
         <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona">
       </div>
-      <div class="about-sedona">
         <h1 class="visually-hidden">Седона</h1>
-        <strong>Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      </div>
+        <strong class="about-sedona">Седона - небольшой городок в Аризоне, заслуживающий большего!</strong>
+        <p class="five-cause">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </header>
 
     <section class="modal-map">
       <header class="appointment">
-        <h2>Заинтересовались?</h2>
+        <h2 class="appointment-title">Заинтересовались?</h2>
         <p class="appointment-info">Укажите предполагаемые даты поездки и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <nav class="search-form">
           <a href="hotels.html">Поиск гостиницы в Седоне</a>
         </nav>
 
@@ -50,11 +47,11 @@
             <legend class="visually-hidden">Сроки прибывания</legend>
             <div class="arrivial-date">
               <label for="datein">Дата заезда:</label>
-              <input type="text" id="datein" name="datein">
+              <input type="text" id="datein" name="datein" class="castom-form">
             </div>
             <div class="departure-date">
               <label for="dateout">Дата выезда:</label>
-              <input type="text" id="dateout" name="dateout">
+              <input type="text" id="dateout" name="dateout" class="castom-form">
             </div>
           </fieldset>
 
@@ -62,20 +59,18 @@
             <legend class="visually-hidden">Количество детей и взрослых</legend>
             <p>
               <label for="adult">Взрослые:</label>
-              <button type="submit" class="adult-quantity-minus">-</button>
-              <input type="text" id="adult" name="adult">
-              <button type="submit" class="adult-quantity-plus">+</button>
+              <button type="submit" class="quantity-controller">-</button>
+              <input type="text" id="adult" name="adult" class="castom-form">
+              <button type="submit" class="quantity-controller">+</button>
             </p>
             <p>
               <label for="child">Дети:</label>
-              <button type="submit" class="child-quantity-minus">-</button>
-              <input type="text" id="child" name="child">
-              <button type="submit" class="child-quantity-plus">+</button>
+              <button type="submit" class="quantity-controller">-</button>
+              <input type="text" id="child" name="child" class="castom-form">
+              <button type="submit" class="quantity-controller">+</button>
             </p>
           </fieldset>
-          <div class="search-button">
-            <a href="hotels.html"> Найти</a>
-          </div>
+            <button type="submit" class="search-button">Найти</button>
         </form>
 
       </header>
