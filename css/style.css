@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  background-image: url("bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:focus {
+  color: #cacaca;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #766357;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.about-sedona {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.about-sedona {
+  text-align: center;
+}
+
+.about-sedona p {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.modal-map {
+  background-color: #ffffff;
+}
+
+.appointment h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.appointment {
+  text-align: center;
+}
+
+.appointment-info {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.search-form {
+  list-style: none;
+}
+
+.search-form a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+.search-form a:hover {
+  background-color: #604e43;
+}
+
+.search-form a:active {
+  background-color: #503e33;
+}
+
+input {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+input:hover{
+  background-color: #ebebeb;
+}
+
+input:focus{
+  background-color: #ffffff;
+  border: 2px solid #ebebeb;
+}
+
+.adult-quantity-minus,
+.adult-quantity-plus,
+.child-quantity-minus,
+.child-quantity-plus {
+  font-size: 14px;
+  line-height: 26px;
+  color: #a9a9a9;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.adult-quantity-minus:hover,
+.adult-quantity-plus:hover,
+.child-quantity-minus:hover,
+.child-quantity-plus:hover {
+  color: #000000;
+}
+
+.adult-quantity-minus:active,
+.adult-quantity-plus:active,
+.child-quantity-minus:active,
+.child-quantity-plus:active {
+  color: #81b3d2;
+}
+
+.search-button a {
+  list-style: none;
+}
+
+.search-button a {
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search-button a:hover {
+  background-color: #669ec0;
+}
+
+.search-button a:active {
+  background-color: #5496bd;
+}
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
