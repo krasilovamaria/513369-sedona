@@ -6,11 +6,23 @@ body {
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
+  color: #000;
   text-transform: uppercase;
 
-  background: #f2f2f2 url('../img/bg.jpg') center no-repeat;
+  background: #f2f2f2 url("../img/bg.jpg") center no-repeat;
   background-size: cover;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.inner-page{
+  background-image: url("../bg-inner.png");
 }
 
 a {
@@ -18,9 +30,9 @@ a {
 }
 
 .main-navigation {
-  color: #000000;
+  color: #000;
 
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .site-navigation {
@@ -28,7 +40,7 @@ a {
 }
 
 .site-navigation a {
-  color: #000000;
+  color: #000;
 }
 
 .site-navigation a:focus,
@@ -40,35 +52,31 @@ a {
   color: #cacaca;
 }
 
-.site-navigation a:not {
+.site-navigation a:not([href]) {
   color: #766357;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+.picture-sedona {
+  text-align: center;
 }
 
 .about-sedona {
- background-color: #ffffff;
- text-align: center;
+  background-color: #fff;
+  text-align: center;
 }
 
-.about-sedona strong{
+.about-sedona .what-is-sedona {
   font-size: 21px;
-  color: #000000;
+  color: #000;
 }
 
 .about-sedona p {
- font-weight: 400;
- color: #333333;
+  font-weight: 400;
+  color: #333;
 }
 
 .modal-map {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 .appointment-title {
@@ -82,11 +90,11 @@ a {
 
 .appointment-info {
   font-weight: 400;
-  color: #333333;
+  color: #333;
 }
 
 .appointment a {
-  color: #ffffff;
+  color: #fff;
   font-size: 21px;
 
   background-color: #766357;
@@ -104,7 +112,7 @@ a {
 }
 
 .castom-form {
-  color: #000000;
+  color: #000;
 
   background-color: #f2f2f2;
   border: none;
@@ -116,7 +124,7 @@ a {
 }
 
 .castom-form:active{
-  background-color: #ffffff;
+  background-color: #fff;
   border: 2px solid #ebebeb;
 }
 
@@ -129,7 +137,7 @@ a {
 
 .quantity-controller:hover,
 .quantity-controller:focus {
-  color: #000000;
+  color: #000;
 }
 
 .quantity-controller:active {
@@ -142,7 +150,7 @@ a {
 
 .search-button {
   font-size: 21px;
-  color: #ffffff;
+  color: #fff;
 
   background-color: #81b3d2;
   border: none;
@@ -157,8 +165,82 @@ a {
   background-color: #5496bd;
 }
 
+.hotel-name {
+  color: #000;
+  font-size: 21px;
+}
+
+.hotel-name:hover,
+.hotel-name:focus {
+  color: #81b3d2;
+}
+
+.hotel-name:active {
+  color: #cacaca;
+}
+
+.info-category {
+  color: #333;
+  font-weight: 400;
+}
+
+.button-more {
+  color: #fff;
+
+  background-color: #81b3d2;
+}
+
+.button-more:hover,
+.button-more:focus {
+  background-color: #669ec0;
+}
+
+.button-more:activ {
+  color: #94b9d2;
+
+  background-color: #5496bd;
+}
+
+.button-reserve {
+  color: #fff;
+
+  background-color: #766357;
+}
+
+.button-reserve:hover,
+.button-reserve:focus {
+  background-color: #604e43;
+}
+
+.button-reserve:activ {
+  color: #928a85;
+
+  background-color: #503e33;
+}
+
+.rating {
+  color: #666;
+  font-weight: 400;
+
+  background-color: #f2f2f2;
+}
+
 .main-footer {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.visitsedona {
+  color: #000;
+}
+
+.footer-social {
+  list-style: none;
+
+  text-align: center;
+}
+
+.footer-copyright {
+  text-align: right;
 }
 
 
