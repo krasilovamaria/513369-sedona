@@ -118,14 +118,14 @@ a {
   border: none;
 }
 
-.castom-form:hover,
-.castom-form:focus{
+.castom-form:hover {
   background-color: #ebebeb;
 }
 
-.castom-form:active{
+.castom-form:focus{
   background-color: #fff;
   border: 2px solid #ebebeb;
+  outline: #ebebeb;
 }
 
 .quantity-controller {
