@@ -124,8 +124,7 @@ a {
 
 .castom-form:focus{
   background-color: #fff;
-  border: 2px solid #ebebeb;
-  outline: #ebebeb;
+  outline: 2px solid #ebebeb;
 }
 
 .quantity-controller {
