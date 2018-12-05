@@ -29,7 +29,7 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
+.header-navigation {
   color: #000;
 
   background-color: #fff;
@@ -242,5 +242,55 @@ a {
   text-align: right;
 }
 
+/*Сетка*/
 
+.header-navigation {
+  margin-bottom: 70px;
+}
 
+.main-navigarion {
+  margin: 20px;
+}
+
+.picture-sedona {
+  margin-bottom: 70px;
+}
+
+.what-is-sedona {
+  display: inline-block;
+  width: 450px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.five-reasons {
+  display: block;
+  width: 500px;
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.appointment-title {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 310px;
+}
+
+.appointment-info {
+  display: block;
+  width: 450px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.search-hotel-sedona {
+  margin-bottom: 0;
+}
+
+.search {
+  width: 570px;
+  margin: auto;
+}
