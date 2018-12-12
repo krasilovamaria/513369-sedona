@@ -28,6 +28,9 @@ body {
 }
 
 .inner-page{
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
   background-image: url("../bg-inner.png");
 }
 
@@ -142,6 +145,7 @@ a {
 .appointment {
   display: flex;
   flex-direction: column;
+  position: relative;
 
   text-align: center;
 }
@@ -193,6 +197,9 @@ a {
 }
 
 .search {
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
   position: relative;
   top: 0;
   left: 50%;
@@ -211,6 +218,7 @@ fieldset {
   width: 345px;
 
   color: #000;
+  text-align: left;
 
   background-color: #f2f2f2;
   border: none;
@@ -230,6 +238,7 @@ fieldset {
   width: 35px;
 
   color: #000;
+  text-align: center;
 
   background-color: #f2f2f2;
   border: none;
@@ -239,7 +248,7 @@ fieldset {
   background-color: #ebebeb;
 }
 
-.castom-form-small:focus{
+.castom-form-small:focus {
   background-color: #fff;
   outline: 2px solid #ebebeb;
 }
@@ -353,7 +362,7 @@ fieldset {
   padding-left: 130px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   background-color: #fff;
   opacity: 0.9;
@@ -398,6 +407,7 @@ fieldset {
 }
 
 .footer-copyright {
+  margin-right: 100px;
   display: flex;
 }
 

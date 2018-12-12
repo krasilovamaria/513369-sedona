@@ -47,30 +47,30 @@
           <a href="hotels.html" class="search-hotel-sedona">Поиск гостиницы в Седоне</a>
           <form class="search" method="get" action="https://echo.htmlacademy.ru">
 
-            <fieldset>
+            <fieldset="modal-date">
               <legend class="visually-hidden">Сроки прибывания</legend>
               <div class="arrivial-date">
                 <label for="datein" class="datein">Дата заезда:</label>
-                <input type="text" class="castom-form" id="datein" name="datein" >
+                <input type="text" class="castom-form" id="datein" name="datein" placeholder="24 апреля 2017">
               </div>
               <div class="departure-date">
                 <label for="dateout" class="dateout">Дата выезда:</label>
-                <input type="text" class="castom-form" id="dateout" name="dateout">
+                <input type="text" class="castom-form" id="dateout" name="dateout" placeholder="4 июля 2017">
               </div>
             </fieldset>
 
-            <fieldset class="one-line">
+            <fieldset class="modal-line">
               <legend class="visually-hidden">Количество детей и взрослых</legend>
               <p>
                 <label for="adult">Взрослые:</label>
                 <button type="button" class="quantity-controller">-</button>
-                <input type="text" class="castom-form-small" id="adult" name="adult">
+                <input type="text" class="castom-form-small" id="adult" name="adult" placeholder="2">
                 <button type="button" class="quantity-controller">+</button>
               </p>
               <p>
                 <label for="child">Дети:</label>
                 <button type="button" class="quantity-controller">-</button>
-                <input type="text" class="castom-form-small" id="child" name="child">
+                <input type="text" class="castom-form-small" id="child" name="child" placeholder="0">
                 <button type="button" class="quantity-controller">+</button>
               </p>
             </fieldset>
