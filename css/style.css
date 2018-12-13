@@ -13,12 +13,22 @@ body {
   background-size: cover;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .body-container {
@@ -89,32 +99,34 @@ a {
 }
 
 .picture-sedona {
+  margin-bottom: 60px;
   padding-top: 75px;
-  padding-bottom: 80px;
+
   text-align: center;
 
   background-image: url(../img/bg.jpg);
   background-size: cover;
 }
 
+.welcome-img-sedona {
+  margin-bottom: 80px;
+}
+
+.accost {
+  background-color: #fff;
+}
 
 .about-sedona {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  margin: 0;
+  padding-bottom: 55px;
 
   background-color: #fff;
   text-align: center;
 }
 
 .what-is-sedona {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  margin-bottom: 38px;
   display: inline-block;
-  position: relative;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
   width: 440px;
 
   font-size: 21px;
@@ -122,62 +134,54 @@ a {
 }
 
 .five-reasons {
-  padding-bottom: 35px;
-  display: inline-block;
-  position: relative;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 490px;
+  margin: 0;
 
   font-weight: 400;
   color: #333;
 }
 
 .modal-map {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  margin: 0;
+  padding: 0;
 
   background-color: #fff;
 }
 
 .appointment {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+  margin: 0 auto;
+  padding-top: 57px;
+  width: 434px;
 
   text-align: center;
 }
 
 .appointment-title {
-  padding-top: 50px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
 
   font-size: 30px;
   line-height: 36px;
 }
 
 .appointment-info {
-  margin-top: 35px;
-  margin-bottom: 50px;
-  display: inline-block;
-  width: 435px;
-  position: relative;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 0;
+  margin-bottom: 52px;
+  padding: 0;
 
   font-weight: 400;
   color: #333;
 }
 
 .appointment a {
-  padding: 30px 0;
+  margin: 0;
+  padding: 30px;
+  display: inline-block;
+  width: 508px;
   position: relative;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 570px;
 
   color: #fff;
   font-size: 21px;
@@ -196,15 +200,18 @@ a {
   background-color: #503e33;
 }
 
+.map {
+  background-color: #fff;
+}
+
 .search {
-  display: flex;
-  justify-content: center;
-  padding-top: 55px;
+  margin-bottom: 78px;
+  padding: 55px;
+  width: 458px;
   position: relative;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 570px;
 
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
@@ -214,14 +221,28 @@ fieldset {
 }
 
 .castom-form {
+  margin-left: 21px;
   height: 35px;
-  width: 345px;
+  width: 330px;
 
   color: #000;
   text-align: left;
 
   background-color: #f2f2f2;
   border: none;
+}
+
+.castom-form::placeholder {
+  padding-left: 10px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+
+  text-align: left;
 }
 
 .castom-form:hover {
@@ -231,6 +252,35 @@ fieldset {
 .castom-form:focus{
   background-color: #fff;
   outline: 2px solid #ebebeb;
+}
+
+.form-wrapper {
+  position: relative;
+}
+
+.calendar-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.arrivial-date {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.departure-date {
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.modal-line {
+  margin-bottom: 55px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .castom-form-small {
@@ -251,6 +301,33 @@ fieldset {
 .castom-form-small:focus {
   background-color: #fff;
   outline: 2px solid #ebebeb;
+}
+
+.castom-form-small::placeholder {
+  padding-left: 10px;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+
+  text-align: center;
+}
+
+.calendar-icon {
+  margin-right: 9px;
+
+  color: #cacaca;
+}
+
+.calendar-icon:hover {
+  color: #000;
+}
+
+.calendar-icon:focus {
+  color: #81b3d2;
 }
 
 .quantity-controller {
@@ -277,9 +354,8 @@ fieldset {
 }
 
 .search-button {
-  width: 450px;
+  width: 458px;
   height: 58px;
-  margin-bottom: 55px;
 
   font-size: 21px;
   color: #fff;
@@ -383,8 +459,6 @@ fieldset {
   text-align: center;
 }
 
-/* currentColor */
-
 .social-button {
   margin: 2px;
   display: inline-block;
@@ -399,24 +473,35 @@ fieldset {
 .social-button:hover,
 .social-button:focus {
   outline: none;
-  color: red;
+  color: #fff;
+  background-color: #669ec0;
 }
 
 .social-button:active {
-  color: green;
+  opacity: 0.3;
+  background-color: #5496bd;
 }
 
 .footer-copyright {
   margin-right: 100px;
+
   display: flex;
 }
 
 .logo-htmlacademy {
+  margin: 0;
+  margin-right: 8px;
+  padding: 0;
+
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .button-htmlacademy {
+  margin-bottom: 28px;
+  padding: 0;
+
   display: inline-block;
   width: 115px;
 }
+
