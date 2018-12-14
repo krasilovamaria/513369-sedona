@@ -37,7 +37,7 @@ input[type="radio"].visually-hidden {
   width: 1200px;
 }
 
-.inner-page{
+.inner-page {
   margin: 0 auto;
   padding: 0;
   width: 1200px;
@@ -59,6 +59,7 @@ a {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .site-navigation {
@@ -99,12 +100,24 @@ a {
 }
 
 .picture-sedona {
+  position: relative;
   margin-bottom: 60px;
   padding-top: 75px;
 
   text-align: center;
 
   background-image: url(../img/bg.jpg);
+  background-size: cover;
+}
+
+.picture-sedona::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 59px;
+  background: url(../img/polygon.svg) center no-repeat;
   background-size: cover;
 }
 
@@ -138,6 +151,78 @@ a {
 
   font-weight: 400;
   color: #333;
+}
+
+.feature-photo {
+  display: flex;
+
+  text-align: center;
+}
+
+.feature-photo-items {
+  flex-direction: column;
+
+  background-color: #81b3d2;
+}
+
+.feature-photo-items h2 {
+  color: #fff;
+}
+
+.feature-photo-items p {
+  color: #fff;
+  font-weight: 400;
+}
+
+.service {
+  padding-top: 61px;
+  padding-bottom: 87px;
+  display: flex;
+  justify-content: center;
+
+  background-color: #fff;
+  text-align: center;
+}
+
+.service p {
+  color: #333;
+  font-weight: 400;
+}
+
+.nature-photo {
+  display: flex;
+}
+
+.nature-photo-items {
+  flex-direction: column;
+
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.nature-photo-items h2 {
+  color: #fff;
+}
+
+.nature-photo-items p {
+  color: #fff;
+  font-weight: 400;
+}
+
+.feature-road {
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 64px;
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  background-color: #eee;
+}
+
+.feature-road p {
+  color: #333;
+  font-weight: 400;
 }
 
 .modal-map {
@@ -177,11 +262,12 @@ a {
   margin: 0;
   padding: 30px;
   display: inline-block;
-  width: 508px;
+  width: 568px;
   position: relative;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  box-sizing: border-box;
 
   color: #fff;
   font-size: 21px;
@@ -201,29 +287,34 @@ a {
 }
 
 .map {
-  background-color: #fff;
+  margin-top: -492px;
+  height: 594px;
+
+  background: url(../img/map.png);
 }
 
 .search {
   margin-bottom: 78px;
   padding: 55px;
-  width: 458px;
+  width: 568px;
   position: relative;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  box-sizing: border-box;
+  background-color: #fff;
 
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 fieldset {
-  border:none;
+  border: none;
 }
 
 .castom-form {
   margin-left: 21px;
-  height: 35px;
-  width: 330px;
+  height: 38px;
+  width: 339px;
 
   color: #000;
   text-align: left;
@@ -249,7 +340,7 @@ fieldset {
   background-color: #ebebeb;
 }
 
-.castom-form:focus{
+.castom-form:focus {
   background-color: #fff;
   outline: 2px solid #ebebeb;
 }
@@ -276,16 +367,23 @@ fieldset {
 }
 
 .modal-line {
-  margin-bottom: 55px;
+  margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.modal-line p {
+  margin-bottom: 54px;
+  display: flex;
+  align-items: center;
 }
 
 .castom-form-small {
-  height: 35px;
-  width: 35px;
+  height: 38px;
+  width: 38px;
+  box-sizing: border-box;
 
   color: #000;
   text-align: center;
@@ -317,7 +415,7 @@ fieldset {
 }
 
 .calendar-icon {
-  margin-right: 9px;
+  margin-right: 3px;
 
   color: #cacaca;
 }
@@ -434,14 +532,14 @@ fieldset {
 }
 
 .main-footer {
+  margin-top: -120px;
   padding-top: 36px;
-  padding-left: 130px;
-
+  padding-bottom: 36px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 
-  background-color: #fff;
-  opacity: 0.9;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .visitsedona {
@@ -461,7 +559,10 @@ fieldset {
 
 .social-button {
   margin: 2px;
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 42px;
 
@@ -478,7 +579,7 @@ fieldset {
 }
 
 .social-button:active {
-  opacity: 0.3;
+  color: #88b6d1;
   background-color: #5496bd;
 }
 
@@ -486,6 +587,7 @@ fieldset {
   margin-right: 100px;
 
   display: flex;
+  align-items: center;
 }
 
 .logo-htmlacademy {
@@ -493,12 +595,13 @@ fieldset {
   margin-right: 8px;
   padding: 0;
 
+  font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .button-htmlacademy {
-  margin-bottom: 28px;
+  margin: 0;
   padding: 0;
 
   display: inline-block;
