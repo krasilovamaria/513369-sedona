@@ -101,7 +101,7 @@ a {
 
 .picture-sedona {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   padding-top: 75px;
 
   text-align: center;
@@ -138,7 +138,7 @@ a {
 }
 
 .what-is-sedona {
-  margin-bottom: 38px;
+  margin-bottom: 25px;
   display: inline-block;
   width: 440px;
 
@@ -160,23 +160,32 @@ a {
 }
 
 .feature-photo-items {
+  padding: 46px 60px 0px 60px;
   flex-direction: column;
 
   background-color: #81b3d2;
 }
 
 .feature-photo-items h2 {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 0;
+  width: 125px;
+
   color: #fff;
 }
 
 .feature-photo-items p {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
   color: #fff;
   font-weight: 400;
 }
 
 .service {
   padding-top: 61px;
-  padding-bottom: 87px;
+  padding-bottom: 67px;
   display: flex;
   justify-content: center;
 
@@ -184,7 +193,41 @@ a {
   text-align: center;
 }
 
-.service p {
+.service h3 {
+  font-size: 21px;
+}
+
+.service__items__hotel {
+  margin-right: 133px;
+}
+
+.service__items__food {
+  margin-right: 122px;
+}
+
+.service__hotel {
+  margin:0;
+  padding: 0;
+  width: 252px;
+
+  color: #333;
+  font-weight: 400;
+}
+
+.service__food {
+  margin:0;
+  padding: 0;
+  width: 284px;
+
+  color: #333;
+  font-weight: 400;
+}
+
+.service__things {
+  margin:0;
+  padding: 0;
+  width: 273px;
+
   color: #333;
   font-weight: 400;
 }
@@ -194,6 +237,8 @@ a {
 }
 
 .nature-photo-items {
+  padding: 49px;
+  padding-bottom: 30px;
   flex-direction: column;
 
   background-color: #81b3d2;
@@ -201,18 +246,27 @@ a {
 }
 
 .nature-photo-items h2 {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 0;
+  width: 155px;
+
   color: #fff;
 }
 
 .nature-photo-items p {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 0;
+
   color: #fff;
   font-weight: 400;
 }
 
 .feature-road {
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 64px;
+  padding-top: 35px;
+  padding-bottom: 40px;
   display: flex;
   justify-content: center;
 
@@ -220,7 +274,29 @@ a {
   background-color: #eee;
 }
 
-.feature-road p {
+.feature-road-small {
+  margin-right: 166px;
+  padding: 0;
+  width: 208px;
+
+  color: #333;
+  font-weight: 400;
+}
+
+.feature-road-beatiful {
+  margin-right: 146px;
+  padding: 0;
+  width: 262px;
+
+  color: #333;
+  font-weight: 400;
+}
+
+.feature-road-tourist {
+  margin: 0;
+  padding: 0;
+  width: 246px;
+
   color: #333;
   font-weight: 400;
 }
@@ -234,15 +310,15 @@ a {
 
 .appointment {
   margin: 0 auto;
-  padding-top: 57px;
-  width: 434px;
+  padding-top: 53px;
+  width: 445px;
 
   text-align: center;
 }
 
 .appointment-title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding: 0;
 
   font-size: 30px;
@@ -287,14 +363,14 @@ a {
 }
 
 .map {
-  margin-top: -492px;
+  margin-top: -477px;
   height: 594px;
 
   background: url(../img/map.png);
 }
 
 .search {
-  margin-bottom: 78px;
+  margin-bottom: 75px;
   padding: 55px;
   width: 568px;
   position: relative;
@@ -362,7 +438,7 @@ fieldset {
 }
 
 .departure-date {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   padding: 0;
 }
 
