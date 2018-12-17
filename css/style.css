@@ -129,6 +129,184 @@ a {
   background-color: #fff;
 }
 
+.form {
+  height: 215px;
+  background: url(../img/filter-background.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.filter-range {
+  width: 330px;
+  padding-top: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+.sort {
+  padding-left: 72px;
+  display: flex;
+  align-items: center;
+  min-height: 86px;
+  background-color: #fff;
+}
+
+.sort__items {
+  margin-right: 41px;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort-choice {
+  margin-right: 40px;
+  font-size: 12px;
+}
+
+.sort-price {
+  margin-right: 33px;
+  font-size: 12px;
+  color: #81b3d2;
+}
+
+.sort-type {
+  margin-right: 33px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-rating {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #81b3d2
+}
+
 .about-sedona {
   margin: 0;
   padding-bottom: 55px;
@@ -151,6 +329,61 @@ a {
 
   font-weight: 400;
   color: #333;
+}
+
+.catalog-list {
+  background-color: #fff;
+}
+
+.catalog-item {
+  padding-top: 30px;
+  padding-left: 72px;
+  display: flex;
+  position: relative;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.item-image {
+  padding-right: 30px;
+}
+
+.item-wrapper h3 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.info-category {
+  width: 185px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog_item-price {
+  display: flex;
+}
+
+.hotel-name {
+  margin-bottom: 17px;
+}
+
+.info-category p {
+  margin: 0;
+  padding: 0;
+}
+
+.item-status {
+  position: absolute;
+  top: 70%;
+  right: 10%;
+}
+
+.stars-mark {
+  position: absolute;
+  top: 20%;
+  right: 10%;
 }
 
 .feature-photo {
@@ -456,6 +689,16 @@ fieldset {
   align-items: center;
 }
 
+.adult {
+  display: inline-block;
+  margin-right: 41px;
+}
+
+.child {
+  display: inline-block;
+  margin-right: 27px;
+}
+
 .castom-form-small {
   height: 38px;
   width: 38px;
@@ -567,6 +810,12 @@ fieldset {
 }
 
 .button-more {
+  margin-right: 4px;
+  width: 110px;
+  height: 29px;
+  display: inline-block;
+  text-align: center;
+
   color: #fff;
 
   background-color: #81b3d2;
@@ -584,6 +833,11 @@ fieldset {
 }
 
 .button-reserve {
+  width: 127px;
+  height: 29px;
+  display: inline-block;
+  text-align: center;
+
   color: #fff;
 
   background-color: #766357;
@@ -614,6 +868,8 @@ fieldset {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  z-index: 1;
 
   background-color: rgba(255, 255, 255, 0.8);
 }
