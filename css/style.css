@@ -793,11 +793,11 @@ fieldset {
   width: 92px;
   text-align: right;
 }
-.stars {
+.star {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url('../img/star.svg') center no-repeat;
+  background: url("../img/star.svg") center no-repeat;
   background-size: cover;
 }
 .main-footer {
