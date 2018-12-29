@@ -18,7 +18,7 @@
           <li><a class="site-navigation__item" href="info.html">Информация</a></li>
           <li><a class="site-navigation__item" href="media.html">Фото и видео</a></li>
           <li><a class="site-navigation__item" href="map.html">Карта штата</a></li>
-          <li><a class="site-navigation__item">Гостиницы</a></li>
+          <li><a class="site-navigation__item site-navigation-hotel">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -57,7 +57,7 @@
             </li>
             <li class="filter-option">
               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="appartment" id="filter-appartment" checked>
-              <label for="filter-appartment">Аппартаменты</label>
+              <label for="filter-appartment">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
@@ -79,17 +79,17 @@
       </form>
     </section>
     <div class="sort">
-      <p class="sort__items"> Найдено:3 </p>
+      <p class="sort__items"> Найдено: 3 </p>
       <p class="sort-choice">Сортировка:</p>
       <a class="sort-price">По цене</a>
       <a class="sort-type" href="hotels1.html">По типу</a>
       <a class="sort-rating" href="hotels2.html">По рейтингу</a>
-      <a class="sort-up">
+      <a class="sort-arrows">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
           <image id="icon-up-dir" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAgElEQVQYlYXPMQ4BURAG4M+GQqOionUJbkFNdJRUVDSbEC7hPHsokY1ZkRePP5lkJvNNMa2qqiQpcMcKj89VkUossYjyC3dRRl/GnMU7DKMfYZvDA+yT4wP63/ARvQTX8ynFY2zShyLr2L/xBe0M7uDc4ClmGdhkjkmNr3/gK9yeQjEOTQQZu1cAAAAASUVORK5CYII="/>
         </svg>
       </a>
-      <a class="sort-down" href="hotels1.html">
+      <a class="sort-arrows" href="hotels1.html">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
           <image id="icon-down-dir" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAiElEQVQYlY3PsQ7BYBSG4Ye4KqN7IiSWmpgYWZlZXAMXYLUy6WQxMMhJ2qaaNvUu//f9581JTic5Xk7oa+fcxegPMRiGHJsPLeI+3xyM8WkQ35hEyOUr1g3yJpsXcjDDsyJGT/JSlh9YVOQ50jo5WOKe5RtW5WFVfmGa5XijF/RqDtpigN3PL74GrBqlqPKn4QAAAABJRU5ErkJggg=="/>
         </svg>
@@ -101,7 +101,7 @@
           <img src="img/product-1.jpg" width="135" height="90" alt="Amara resort & SPA">
         </a>
         <div class="item-wrapper">
-          <h3><a href="catalog-item.html" class="hotel-name">Amara resort & SPA</a></h3>
+          <h3><a class="hotel-name" href="catalog-item.html">Amara resort & SPA</a></h3>
           <div class="info-category">
             <p>Гостиница</p>
             <p>от 4000 Р.</p>
@@ -116,7 +116,7 @@
             <span class="star"></span>
             <span class="star"></span>
           </div>
-          <span class="rating">Рейтинг 8,5</span>
+            <span class="rating">Рейтинг: 8,5</span>
         </div>
       </article>
       <article class="catalog-item-desert">
@@ -124,7 +124,7 @@
           <img src="img/product-2.jpg" width="135" height="90" alt="Desert Quail Inn">
         </a>
         <div class="item-wrapper">
-          <h3><a href="catalog-item.html" class="hotel-name">Desert Quail Inn</a></h3>
+          <h3><a class="hotel-name" href="catalog-item.html">Desert Quail Inn</a></h3>
           <div class="info-category">
             <p>Мотель</p>
             <p>от 3000 Р.</p>
@@ -133,12 +133,12 @@
             <a class="button-more" href="#">Подробнее</a>
             <a class="button-reserve" href="#">Забронировать</a>
           </div>
-          <div class="stars-mark">
+          <div class="stars-mark stars-mark-desert">
             <span class="star"></span>
             <span class="star"></span>
             <span class="star"></span>
           </div>
-          <span class="rating">Рейтинг 8,9</span>
+          <span class="rating">Рейтинг: 8,9</span>
         </div>
       </article>
       <article class="catalog-item-villas">
@@ -146,7 +146,7 @@
           <img src="img/product-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
         </a>
         <div class="item-wrapper">
-          <h3><a href="catalog-item.html" class="hotel-name">Villas at Poco Diablo</a></h3>
+          <h3><a class="hotel-name" href="catalog-item.html">Villas at Poco Diablo</a></h3>
           <div class="info-category">
             <p>Апартаменты</p>
             <p>от 2000 Р.</p>
@@ -155,11 +155,11 @@
             <a class="button-more" href="#">Подробнее</a>
             <a class="button-reserve" href="#">Забронировать</a>
           </div>
-          <div class="stars-mark">
+          <div class="stars-mark stars-mark-villas">
             <span class="star"></span>
             <span class="star"></span>
           </div>
-          <span class="rating">Рейтинг 9,2</span>
+          <span class="rating">Рейтинг: 9,2</span>
         </div>
       </article>
     </section>
