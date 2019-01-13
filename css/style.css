@@ -100,27 +100,97 @@ a {
 .site-navigation a:not([href]) {
   color: #766357;
 }
-.picture-sedona {
-  position: relative;
-  margin-bottom: 58px;
-  padding-top: 76px;
-  text-align: center;
-  background-image: url(../img/bg.jpg);
-  background-color: #7293b6;
-  background-size: cover;
+.greeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1200px;
+  background-color: #dfedf6;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 773px;
+  background-position: 0 -56px;
 }
-.picture-sedona::after {
-  content: '';
+.greeting-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 76px;
+  margin-bottom: 79px;
+}
+.sedona-text::before {
+  content: "";
   position: absolute;
-  bottom: 0;
+  top: -57px;
   left: 0;
-  right: 0;
-  height: 61px;
-  background: url(../img/polygon.svg) bottom center no-repeat;
-  background-size: 1200px;
+  width: 1200px;
+  height: 60px;
+  background-image: url("../img/polygon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
-.welcome-img-sedona {
-  margin-bottom: 72px;
+.sedona-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 51px;
+  padding-left: 352px;
+  padding-right: 352px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.sedona-text h2 {
+  display: block;
+  width: 616px;
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+.sedona-text p {
+  width: 490px;
+  margin: 0;
+  margin-top: 28px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
 }
 .accost {
   background-color: #fff;
@@ -283,7 +353,6 @@ a {
   margin: 0;
   width: 50px;
   color: inherit;
-  font: inherit;
   background: none;
   border: none;
 }
@@ -404,10 +473,10 @@ a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dashed #81b3d2;
 }
-.sort-things:hover {
+.sort a:hover {
   color: #81b3d2;
 }
-.sort-things:active {
+.sort a:active {
   color: #000;
 }
 .sorting-arrows {
@@ -434,15 +503,6 @@ a {
   padding-bottom: 51px;
   background-color: #fff;
   text-align: center;
-}
-.what-is-sedona {
-  display: inline-block;
-  margin-top: 2px;
-  margin-bottom: 30px;
-  vertical-align: inherit;
-  width: 440px;
-  font-size: 21px;
-  line-height: 26px;
 }
 .five-reasons {
   margin: 0;
@@ -529,14 +589,14 @@ a {
 }
 .feature-photo-items h2 {
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   padding: 0;
   width: 125px;
   color: #fff;
 }
 .feature-photo-items p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   padding: 0;
   color: #fff;
   font-weight: 400;
@@ -548,7 +608,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 50px;
-  padding-bottom: 80px;
+  padding-bottom: 81px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -587,6 +647,18 @@ a {
           animation: fade 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+.js-form {
+  visibility: visible;
+  display: block;
+  top: 0;
+  left: 50%;
+  position: relative;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .form-error {
   animation: shake 0.6s;
@@ -644,41 +716,41 @@ a {
 }
 .nature-photo-items p {
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   padding: 0;
   color: #fff;
   font-weight: 400;
 }
 .feature-road {
-  margin: 0;
-  padding-top: 48px;
-  padding-bottom: 41px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  background-color: #eee;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
 }
 .feature-road-desc {
-  margin: 0 auto;
-  padding: 0;
-  width: 262px;
-  color: #333;
-  font-weight: 400;
+  width: 400px;
 }
-.feature-road-desc h2 {
-  margin: 0 auto;
-  width: 120px;
-  color: #000;
+.feature-title {
+  margin: 0;
+  padding: 50px 120px 20px 120px;
+  line-height: 21px;
+  text-align: center;
 }
-.feature-tourist {
-  width: 259px;
+.feature-title-l {
+  margin: 0;
+  padding: 50px 135px 20px 140px;
+  line-height: 21px;
+  text-align: center;
 }
-.feature-road-desc h2 {
-  padding-bottom: 6px;
+.feature-number {
+  margin: 0;
+  padding: 0px 65px 20px 65px;
+  text-align: center;
+}
+.feature-last {
+  margin: 0;
+  padding: 0px 65px 52px 65px;
+  text-align: center;
 }
 .modal-map {
   margin: 0;
